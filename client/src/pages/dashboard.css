@@ -1,0 +1,38 @@
+.dashboard-container {
+  max-width: 1280px; /* same as max-w-7xl */
+  margin: 0 auto;
+}
+
+/* Success + Error Alerts */
+.alert {
+  margin-bottom: 24px;
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.alert-success {
+  background-color: #ecfdf5;        /* green-50 */
+  color: #065f46;                   /* green-800 */
+  border: 1px solid #a7f3d0;        /* green-200 */
+}
+
+.alert-error {
+  background-color: #fef2f2;        /* red-50 */
+  color: #991b1b;                   /* red-800 */
+  border: 1px solid #fecaca;        /* red-200 */
+}
+
+/* Title + Subtext */
+.dashboard-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #111827; /* gray-900 */
+  margin-bottom: 8px;
+}
+
+.dashboard-subtext {
+  font-size: 15px;
+  color: #4b5563; /* gray-600 */
+  margin-bottom: 24px;
+}

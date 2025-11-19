@@ -1,0 +1,198 @@
+/* Container */
+.linktable-wrapper {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Header */
+.linktable-header {
+  padding: 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.linktable-header-top {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .linktable-header-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.linktable-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Search Box */
+.search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .search-wrapper {
+    width: 256px;
+  }
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  width: 16px;
+  height: 16px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 16px 8px 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.search-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+}
+
+/* Empty states */
+.empty-state {
+  padding: 32px;
+  text-align: center;
+  color: #6b7280;
+}
+
+/* Table */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.linktable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.linktable thead {
+  background: #f9fafb;
+}
+
+.linktable th {
+  padding: 12px 24px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6b7280;
+  letter-spacing: 0.05em;
+}
+
+.linktable tbody tr {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  transition: background 0.2s;
+}
+
+.linktable tbody tr:hover {
+  background: #f9fafb;
+}
+
+.linktable td {
+  padding: 16px 24px;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+/* Short Code Badge */
+.shortcode-badge {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+/* Copy Button */
+.icon-btn {
+  padding: 4px;
+  color: #9ca3af;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.icon-btn:hover {
+  color: #4b5563;
+}
+
+/* Copied Text */
+.copied-text {
+  font-size: 14px;
+  color: #059669;
+}
+
+/* URL Column */
+.url-truncate {
+  max-width: 240px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Click Badge */
+.clicks-badge {
+  background: #d1fae5;
+  color: #065f46;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Last Clicked */
+.last-clicked {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Action Buttons */
+.action-btn {
+  padding: 4px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.action-btn-blue {
+  color: #2563eb;
+}
+
+.action-btn-blue:hover {
+  color: #1e3a8a;
+}
+
+.action-btn-green {
+  color: #059669;
+}
+
+.action-btn-green:hover {
+  color: #047857;
+}
+
+.action-btn-red {
+  color: #dc2626;
+}
+
+.action-btn-red:hover {
+  color: #991b1b;
+}
